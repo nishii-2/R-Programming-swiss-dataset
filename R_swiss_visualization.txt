@@ -1,0 +1,21 @@
+# for plotting the dataset
+plot(swiss)
+
+# for scatter plot visualization for infant mortality & Fertility
+library(ggplot2)
+p= ggplot(data=swiss, aes(Fertility,Infant.Mortality, color= Catholic))
+p= p+ geom_point() + xlab("Infant Mortality") + ylab("Fertility")
+print(p)
+
+#scatter plot for Fertility & Education
+plot(swiss$Fertility, swiss$Education,
+xlab="Fertility", ylab="Education",
+main="Education vs Fertility (by province), Switzerland, 1888")
+
+#histogram for Education distribution
+hist(swiss$Education, freq=FALSE, xlab="Education",
+main="Education Distribution, by Province, Switzerland, 1888",
+col="lavender", ylim=c(0,0.15))
+
+#boxplot for swiss dataset
+boxplot(swiss)

@@ -1,0 +1,60 @@
+# For viewing the data
+library(datasets)
+view(swiss)
+
+#summarizing the dataset
+library(datasets)
+summary(swiss)
+
+# detailed summarization
+min(swiss$Fertility)
+max(swiss$Fertility)
+mean(swiss$Fertility)
+median(swiss$Fertility)
+quantile(swiss$Fertility,0.25)
+quantile(swiss$Fertility,0.75)
+
+min(swiss$Agriculture)
+max(swiss$Agriculture)
+mean(swiss$Agriculture)
+median(swiss$Agriculture)
+quantile(swiss$Agriculture,0.25)
+quantile(swiss$Agriculture,0.75)
+
+min(swiss$Examination)
+max(swiss$Examination)
+mean(swiss$Examination)
+median(swiss$Examination)
+quantile(swiss$Examination,0.25)
+quantile(swiss$Examination,0.75)
+
+min(swiss$Education)
+max(swiss$Education)
+mean(swiss$Education)
+median(swiss$Education)
+quantile(swiss$Education,0.25)
+quantile(swiss$Education,0.75)
+
+min(swiss$Catholic)
+max(swiss$Catholic)
+mean(swiss$Catholic)
+median(swiss$Catholic)
+quantile(swiss$Catholic,0.25)
+quantile(swiss$Catholic,0.75)
+
+min(swiss$Infant.Mortality)
+max(swiss$Infant.Mortality)
+mean(swiss$Infant.Mortality)
+median(swiss$Infant.Mortality)
+quantile(swiss$Infant.Mortality,0.25)
+quantile(swiss$Infant.Mortality,0.75)
+
+# for describing the dataset
+library(psych)
+describe(swiss)
+
+# for finding correlations between variables in dataset
+cor(swiss)
+
+
+
